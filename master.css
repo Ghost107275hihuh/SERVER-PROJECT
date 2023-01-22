@@ -1,0 +1,113 @@
+/* START GLOBAL RULES */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(image-learn-programming2.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+body::before {
+    content: "";
+    background: rgba(69, 72, 143, 0.539);
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;    
+    margin-right: auto;    
+    width: 600px;
+}
+/* SMALL */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* MEDIUM */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* LARGE */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* END GLOBAL RULES */  
+.title {
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: larger;
+}
+h3 {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: auto;
+}
+p {
+    font-size: 18px;
+    text-shadow: 1px 0px 1px black;
+}
+form {
+    display: inline-block;
+    position: relative;
+    background-color: rgba(38, 38, 69, 0.963);
+    border-radius: 2%;
+    padding: 40px;
+    color: white;
+    margin: 0px calc(100% - 822px);
+}
+@media (max-width: 767px) {
+    form {
+        margin: 10px calc(100% - 526px);
+        text-align: center;
+    }
+}
+.main1, .main2,.main3,.main4,.main5,.main6,.main7,.main8,.main9 {
+    margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+    .main1, .main2,.main3,.main4,.main5,.main6,.main7,.main8,.main9 {
+        margin-bottom: 15px;
+    }
+}
+.main1 input {
+    min-width: 100%;
+}
+.main2 input {
+    min-width: 100%;
+}
+.main3 input {
+    min-width: 100%;
+}
+.main4 select {
+    min-width: 100%;
+}
+.main6 select {
+    min-width: 100%;
+}
+label {
+    margin-bottom: 10px;
+    display: inline-table;
+    font-weight: 700;
+}
+#subm {
+    min-width: 100%;
+    padding: 10px;
+    background: #2fa62f;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bolder;
+}

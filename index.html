@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MAIN TEMPLATE CSS FILE -->
+    <link rel="stylesheet" href="master.css">
+    <!-- RENDER ALL ELEMENTS MORMALLY -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FONT AWESEME LIBRARY -->
+    <link rel="stylesheet" href="all.min.css">
+    <title>Build a Survey Form</title>
+</head>
+<body>
+    <div class="title">
+        <div class="container">
+            <div class="title">
+                <h3>SERVER Survey Form</h3>
+                <p><i>Thank you for taking the
+                time to help us improve the platform</i></p>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="container">
+            <form action="" >
+                <div class="main1" >
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" required placeholder="Enter your name">
+                </div>
+                <div class="main2" >
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required placeholder="Enter your Email">
+                </div>
+                <div class="main3" >
+                    <label for="age">Age (optional)</label><br>
+                    <input type="number" name="age" id="age" placeholder="Age" max="99" min="10">
+                </div>
+                <div class="main4" >
+                    <label for="current-role">Which option best describes your current role?</label><br>
+                    <select name="current-role" id="current-role">
+                        <optgroup label="Slect current role">
+                            <option value="">Student</option>
+                            <option value="">Full Time Job</option>
+                            <option value="">Full Time Learner</option>
+                            <option value="">Prefer not to say</option>
+                            <option value="">Other</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="main5">
+                    <label for="radio">Would you recommend SERVER to a friend?</label><br>
+                    <input type="radio" name="x" id="Definitely" checked >
+                    <label for="Definitely">Definitely</label><br>
+                    <input type="radio" name="x" id="Maybe">
+                    <label for="Maybe">Maybe</label><br>
+                    <input type="radio" name="x" id="Not sure">
+                    <label for="Not sure">Not sure</label>
+                </div>
+                <div class="main6" >
+                    <label for="favorite-feature">What is your favorite feature of SERVER?</label><br>
+                    <select name="favorite-feature" id="favorite-feature">
+                        <optgroup label="Select an option">
+                            <option value="">Challenges</option>
+                            <option value="">Projects</option>
+                            <option value="">Community</option>
+                            <option value="">Open Source</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="main7">
+                    <label for="checkbox">What would you like to see improved? (Check all that apply)</label><br>
+                    <input type="checkbox" name="Front-end Projects" id="Front-end Projects">
+                    <label for="Front-end Projects">Front-end Projects</label><br>
+                    <input type="checkbox" name="Back-end Projects" id="Back-end Projects">
+                    <label for="Back-end Projects">Back-end Projects</label><br>
+                    <input type="checkbox" name="Data Visualization" id="Data Visualization">
+                    <label for="Data Visualization">Data Visualization</label><br>
+                    <input type="checkbox" name="Challenges" id="Challenges">
+                    <label for="Challenges">Challenges</label><br>
+                    <input type="checkbox" name="Open Source Community" id="Open Source Community">
+                    <label for="Open Source Community">Open Source Community</label><br>
+                    <input type="checkbox" name="Gitter help rooms" id="Gitter help rooms">
+                    <label for="Gitter help rooms">Gitter help rooms</label><br>
+                    <input type="checkbox" name="Videos" id="Videos">
+                    <label for="Videos">Videos</label><br>
+                    <input type="checkbox" name="City Meetups" id="City Meetups">
+                    <label for="City Meetups">City Meetups</label><br>
+                    <input type="checkbox" name="Wiki" id="Wiki">
+                    <label for="Wiki">Wiki</label><br>
+                    <input type="checkbox" name="Forum" id="Forum">
+                    <label for="Forum">Forum</label><br>
+                    <input type="checkbox" name="Additional Courses" id="Additional Courses">
+                    <label for="Additional Courses">Additional Courses</label><br>
+                </div>
+                <div class="main8">
+                    <label for="comments">Any comments or suggestions?</label><br>
+                    <textarea name="comments" id="comments" cols="50" rows="5" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="main9">
+                    <input type="submit" value="submit" id="subm">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
