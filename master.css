@@ -60,13 +60,13 @@ p {
     text-shadow: 1px 0px 1px black;
 }
 form {
-    display: inline-block;
+    display: table;
     position: relative;
     background-color: rgba(38, 38, 69, 0.963);
     border-radius: 2%;
     padding: 40px;
     color: white;
-    margin: 0px calc(100% - 822px);
+    margin: auto;
 }
 @media (max-width: 767px) {
     form {
@@ -94,8 +94,14 @@ form {
 .main4 select {
     min-width: 100%;
 }
+select#current-role {
+    cursor: pointer;
+}
 .main6 select {
     min-width: 100%;
+}
+select#favorite-feature {
+    cursor: pointer;
 }
 label {
     margin-bottom: 10px;
@@ -104,10 +110,16 @@ label {
 }
 #subm {
     min-width: 100%;
-    padding: 10px;
-    background: #2fa62f;
-    color: white;
+    padding: 15px;
+    background: #00ff00;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     border: none;
     font-weight: bolder;
+    border-radius: 15px;
+    font-size: 20px;
+}
+#subm:hover {
+    background-color: #257f3a;
+    color: white;
 }
